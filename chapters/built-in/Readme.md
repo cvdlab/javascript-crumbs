@@ -275,7 +275,7 @@ It returns an array containing the deleted elements.
 >var colors = ['red', 'green', 'blue'];
 >
 >removed = colors.splice(1, 0, 'yellow', 'orange');  // insert two items at position 1
->colors;  // green,yellow,orange,blue
+>colors;  // red,green,yellow,orange,blue
 >removed; // empty array
 >```
 >
@@ -341,7 +341,7 @@ It returns the last position of the item in the array or –1 if the item isn’
 >var numbers = [1,2,3,4,5,4,3,2,1];
 >
 >var index = numbers.lastIndexOf(4, -4);
->index; // 2
+>index; // 5
 >```
 
 ### Iterative methods: every, filter, forEach, map, some
@@ -621,7 +621,7 @@ Number.NEGATIVE_INFINITY   //-Infinity
 Number.NaN   // NaN
 ```
 
-`Number()` function without `new` converts any value ti a number.
+`Number()` function without `new` converts any value to a number.
 
 > #### Example
 >```js
@@ -687,7 +687,7 @@ String type is the object representation for strings.
 > #### Example
 >```js
 >var stringObject = new String('I love JavaScript!');
->console.log(stringObject.length);   // > 11
+>console.log(stringObject.length);   // > 18
 >```
 
 Strings allow for bracket notation access to single character.
@@ -808,7 +808,7 @@ If it does not have the `g` flag, then it will replace only the first occurrence
 >
 >```js
 >var result = "mother_in_law".replace(/_/, '-');
->result; // "mother-in-law"
+>result; // "mother-in_law"
 >```
 
 The `replaceValue` can be a string or a function.  
