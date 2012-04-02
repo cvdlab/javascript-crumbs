@@ -195,7 +195,7 @@ There are some details to be aware of:
 >
 >// name = webcam
 >// color = black
->// someMethod = function () { return 1; } price = 100
+>// someMethod = function () { return 1; }
 >// price = 100
 >// rating = 3
 >```
@@ -284,7 +284,7 @@ Some engines expose this link as a `__proto__` properties.
 >
 >```js
 >developer.constructor = 'junk'
->typeof developer.constructor.prototype // "undefifined", a string object haven't prototype property
+>typeof developer.constructor.prototype // "undefined", a string object haven't prototype property
 >
 >developer.breathes  // "air", engine uses imutable __proto__ secret link
 >```
@@ -298,7 +298,7 @@ Some engines expose this link as a `__proto__` properties.
 >
 >```js
 >typeof developer.__proto__   // "object"
->typeof developer.prototype   // "undefifined"
+>typeof developer.prototype   // "undefined"
 >```
 
 ### Replacing prototype object
